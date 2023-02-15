@@ -1,0 +1,492 @@
+.bordermenus {
+    border-bottom: 1px solid;
+}
+
+.homebg {
+    background-color: rgb(251, 251, 251);
+}
+
+.maindashboard {
+    background-color: #00ffe9;
+}
+
+.cardcolor {
+    background-color: #ff23ef;
+}
+
+.lineheight {
+    line-height: 128px;
+}
+
+.product_list_container {
+    width: 80%;
+}
+
+
+/* Modal Section CSS */
+
+#modal_view_parent {
+    display: none;
+}
+
+.confirm_overlay_popup {
+    transform: translate(-50%, -50%);
+}
+
+#modal_view_outer {
+    border: 1px solid #bbb;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.open_modal {
+    -webkit-animation: open_modal_animate 0.8s;
+    animation: open_modal_animate 0.8s;
+    display: block;
+}
+
+@-webkit-keyframes open_modal_animate {
+    0% {
+        transform: scale(0.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes open_modal_animate {
+    0% {
+        transform: scale(0.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.close_modal {
+    -webkit-animation: close_modal_animate 0.8s;
+    animation: close_modal_animate 0.8s;
+
+}
+
+@-webkit-keyframes close_modal_animate {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(0.1);
+    }
+}
+
+@keyframes close_modal_animate {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(0.1);
+    }
+}
+
+/* Delte Confirmtion Modal */
+.open_confirm_modal {
+    -webkit-animation: open_confirm_modal_animate 0.4s;
+    animation: open_confirm_modal_animate 0.4s;
+}
+
+@-webkit-keyframes open_confirm_modal_animate {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes open_confirm_modal_animate {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+
+/* Input Color Span Styling */
+.input_span_color {
+    height: 40px;
+    margin: 4px 4px;
+    width: 50px;
+    padding: 2px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    transition: 0.4s;
+}
+
+.input_span_color:hover {
+    background-image: url(../../pics/trash-can-solid.svg);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: #bbb;
+}
+
+/* Input Size Span Styling */
+/* h-[40px] w-[40px] leading-5 text-center text-lg font-medium mx-2  my-1 text-l p-2 rounded-full border-black border-2 */
+
+.input_span_size {
+    height: 40px;
+    width: 40px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 8px;
+    padding: 8px;
+    border-radius: 100%;
+    font-weight: 500;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.input_span_size:hover {
+    background-image: url(../../pics/trash-can-solid.svg);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: #bbb;
+}
+
+@media (max-width:920px) {
+    .main_flex_box {
+        flex-direction: column-reverse;
+    }
+
+    .fit_width {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .product_list_container {
+        width: 100%;
+    }
+
+    .maindashboard {
+        flex: none;
+    }
+}
+
+@media (max-width:670px) {
+    .responsive_modal {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #modal_view_outer {
+        width: 300px;
+    }
+
+    .title_desc_sec {
+        border: none;
+    }
+}
+
+@media (max-width:560px) {
+    .confirm_overlay_popup {
+        width: 355px;
+        padding-bottom: 10px;
+    }
+
+    #img_delete img {
+        width: 40px;
+    }
+
+    #img_delete {
+        top: -34px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* Inputs Styling */
+.inp_title {
+    padding: 2px;
+    padding-right: 3px;
+    border: 2px solid black;
+}
+
+.input_first_bottom {
+    padding: 2px;
+    padding-right: 3px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+#txt_area {
+    margin-top: 50px;
+}
+
+.flex_menus {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.label {
+    font-size: 25px;
+}
+
+.label_bottom {
+    font-size: 17px;
+    width: 100%;
+}
+
+.resp_center {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: none;
+}
+
+.main_first {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.first_bottom {
+    border: 2px solid black;
+    height: 340px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bottom_iner {
+    padding: 5px;
+    height: 100%;
+}
+
+.update_btn_div {
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    background-color: #3bffa5;
+    text-align: center;
+    /* line-height: 90px; */
+}
+
+.btn_update {
+    width: 100%;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 22px;
+}
+
+.left_bottom {
+    height: 340px;
+}
+
+.input_field {
+    margin: 5px;
+    padding: 5px;
+    padding-left: 9px;
+
+}
+
+.main_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat_title {
+    border: 2px solid #000;
+}
+
+.underline_add {
+    text-decoration: underline;
+}
+
+
+@media (max-width:1005px) {
+    .main_flex .top_menu_div {
+        flex-direction: column;
+    }
+
+    .main_first {
+        margin: auto;
+    }
+
+    .flex_menus {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+
+/* Dismissalbe Allert */
+.nojs-alert {
+    display: block;
+}
+
+.nojs-alert .alert-flag {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.nojs-alert .alert-container {
+    display: block;
+    pointer-events: none;
+    position: relative;
+}
+
+.nojs-alert .alert-content {
+    border: 1px solid black;
+    background: #2dff64;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.nojs-alert .alert-flag:checked~.alert-close,
+.nojs-alert .alert-flag:checked~.alert-content {
+    display: none;
+}
+
+.nojs-alert .alert-close {
+    pointer-events: all;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 32px;
+    cursor: pointer;
+    top: 70px;
+}
+
+.nojs-alert .alert-close:focus {
+    outline: 1px solid black;
+}
+
+/* Setting Section  */
+.main_right {
+    width: 80%;
+}
+
+.bordermenus {
+    border-bottom: 1px solid;
+}
+
+.homebg {
+    background-color: rgb(251, 251, 251);
+}
+
+.maindashboard {
+    background-color: #00ffe9;
+    width: 100%;
+}
+
+.cardcolor {
+    background-color: #ff23ef;
+}
+
+.lineheight {
+    line-height: 128px;
+}
+
+.fit_width {
+    margin: 6px;
+}
+
+/* confrim update modal styling */
+.open_confirm_modal {
+    -webkit-animation: open_confirm_modal_animate 0.4s;
+    animation: open_confirm_modal_animate 0.4s;
+}
+
+.confirm_overlay_popup {
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes open_confirm_modal_animate {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes open_confirm_modal_animate {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+/* confrim update modal styling Ends */
+
+
+@media (max-width:920px) {
+    .main_flex_box {
+        flex-direction: column-reverse;
+
+    }
+
+    .fit_width {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .main_right {
+        width: 100%;
+    }
+
+    .fit_width {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .maindashboard {
+        flex: none;
+    }
+}
+
+
+/* Prfiile Secti0oon  */
+
+.delete{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+
+
+
+
